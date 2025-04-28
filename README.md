@@ -13,7 +13,7 @@ python -m venv venv
 Puis mettre à jour pip et installer les dépendences
 
 ```bash
-pip install --upgrade pip
+python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
