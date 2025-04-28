@@ -48,3 +48,4 @@ Le module ```catégory``` ayant été définie votre travail consiste créer cel
 et definir leurs routes urls
 
 __NB :__ La route qui définira les détails du produit devra utiliser le name="product-detail"
+Version de python __3.13.1__
