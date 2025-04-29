@@ -33,3 +33,4 @@ coverage
 media
 /media/*
 *.sqlite3
+/staticfiles/
