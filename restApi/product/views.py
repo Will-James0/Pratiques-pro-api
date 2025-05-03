@@ -31,6 +31,11 @@ class CategoryMixinsView(mixins.ListModelMixin,
 
     def delete(self, request, *args, **kwargs):
         return self.destroy(request, *args, **kwargs)
+    
+class DetailProductView(generics.RetrieveAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    
 
 
 generics.RetrieveAPIView
