@@ -11,4 +11,11 @@ urlpatterns = [
     ])),
 
     path('product/<int:pk>/', views.DetailProductView.as_view(), name='product-detail'),
+    
+    path('product/', include([
+        path('', views.ProductMixinsView.as_view(), name='product-list'),
+        path('create/', views.ProductMixinsView.as_view(), name='product-create'),
+        path('update/<int:pk>/', views.ProductMixinsView.as_view(), name='product-update'),
+        path('delete/<int:pk>/', views.ProductMixinsView.as_view(), name='product-delete'),
+    ])),
 ]

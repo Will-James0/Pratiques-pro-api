@@ -49,3 +49,5 @@ et definir leurs routes urls
 
 __NB :__ La route qui définira les détails du produit devra utiliser le name="product-detail"
 __PS :__ la route de categories que j'ai créé est [http://localhost:8000/api/category/](link)
+
+Version de python __3.13.1__
