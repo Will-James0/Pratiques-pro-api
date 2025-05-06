@@ -14,7 +14,6 @@ class CategorySerializer(serializers.ModelSerializer):
         
         
 class ProductSerializer(serializers.ModelSerializer):
-    category = CategorySerializer(read_only=True)
     url = serializers.HyperlinkedIdentityField(view_name='product-detail', lookup_field='pk')
     name = serializers.CharField(validators=[validate_product_name])
     description = serializers.CharField(required=False, allow_blank=True)

@@ -33,4 +33,23 @@ class CategoryMixinsView(mixins.ListModelMixin,
         return self.destroy(request, *args, **kwargs)
 
 
-generics.RetrieveAPIView
+class ListProductView(generics.ListAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    
+    
+class CreateProductView(generics.CreateAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    
+
+class UpdateProductView(generics.UpdateAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    lookup_field = 'pk'
+    
+    
+class DestroyProductView(generics.DestroyAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
+    lookup_field = 'pk'
