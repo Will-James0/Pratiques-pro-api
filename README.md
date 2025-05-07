@@ -14,7 +14,7 @@ Puis mettre à jour pip et installer les dépendences
 
 ```bash
 python.exe -m pip install --upgrade pip
-pip install -r requirements.txt
+pip install -r restApi/requirements.txt
 ```
 
 ### Configuration de la BD
